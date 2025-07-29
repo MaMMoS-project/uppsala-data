@@ -6,6 +6,9 @@ This repository contains DFT and spindynamics data computed at Uppsala universit
 
 ## Contributing data
 
+Data contribution is not yet possible. This section will be updated once data
+can be accepted.
+
 ## Acknowledgements
 
 This software has been supported by the European Union’s Horizon Europe research and innovation programme under grant agreement No 101135546 [MaMMoS](https://mammos-project.github.io/).
