@@ -56,7 +56,7 @@ jobs:
           TERM: xterm-256color
           COLUMNS: '160'
         run: |
-          set +e        # we collect failures manually
+          set +e
           failed=0
 
           for dir in $DIRS; do
