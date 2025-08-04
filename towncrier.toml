@@ -1,0 +1,37 @@
+[tool.towncrier]
+directory = "changes"
+filename = "CHANGELOG.md"
+name = "Uppsala data"
+title_format = "## [Uppsala data {version}](https://github.com/MaMMoS-project/uppsala-data/tree/{version}) – {project_date}"
+# point to PRs instead of issues; CI ensures that the correct PR numbers exist
+issue_format = "[#{issue}](https://github.com/MaMMoS-project/uppsala-data/pull/{issue})"
+
+[[tool.towncrier.type]]
+directory = "added"
+name = "Added"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "changed"
+name = "Changed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "deprecated"
+name = "Deprecated"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "removed"
+name = "Removed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "fixed"
+name = "Fixed"
+showcontent = true
+
+[[tool.towncrier.type]]
+directory = "misc"
+name = "Misc"
+showcontent = true

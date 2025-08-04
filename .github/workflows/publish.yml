@@ -1,0 +1,79 @@
+name: Publish package
+
+on:
+  push:
+    tags:
+      - '*'
+      - "!latest"
+
+jobs:
+  check-changelog:
+    name: Check changelog is up-to-date
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check that changes/ is empty
+        shell: bash
+        run: |
+          set -euo pipefail
+          # Count every *.md file except README.md in changes/
+          count=$(find changes -type f -name '*.md' ! -name 'README.md' | wc -l)
+
+          if [ "$count" -ne 0 ]; then
+            echo "::error::There are still $count news fragment(s) in 'changes/'."
+            echo "Run 'towncrier build' and commit the updated CHANGELOG.md."
+            exit 1
+          fi
+          echo "No news fragments left in changes/"
+      - name: Check CHANGELOG.md heading
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          # Extract the first level 2 heading
+          first_h2=$(grep -o -m1 -E "^## \[uppsala-data .*\]" CHANGELOG.md || true)
+
+          if [ -z "$first_h2" ]; then
+            echo "::error::No level-2 (##) heading found in CHANGELOG.md."
+            exit 1
+          fi
+
+          echo "First heading in CHANGELOG.md starts with: '$first_h2'"
+
+          expected="## [uppsala-data $GITHUB_REF_NAME]"
+          if [ "$first_h2" != "$expected" ]; then
+            echo "::error::First heading must start with '$expected'"
+            exit 1
+          fi
+
+          echo "✔ CHANGELOG heading matches the pushed tag ($GITHUB_REF_NAME)"
+
+  github-release:
+    name: GitHub Release
+    needs:
+    - check-changelog
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+    - name: Create GitHub Release
+      env:
+        GITHUB_TOKEN: ${{ github.token }}
+      run: >-
+        gh release create
+        "$GITHUB_REF_NAME"
+        --repo "$GITHUB_REPOSITORY"
+        --notes ""
+
+  latest-tag:
+    needs:
+      - check-changelog
+    name: Update latest tag
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+      - name: Run latest-tag
+        uses: EndBug/latest-tag@latest

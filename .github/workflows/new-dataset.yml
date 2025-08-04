@@ -1,0 +1,69 @@
+name: Validate new data directories
+
+on:
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # full history to diff against main branch
+
+      - name: Detect new data directories
+        id: detect
+        env:
+          BASE_REF: ${{ github.base_ref }}
+        run: |
+          git fetch origin "${BASE_REF}"
+
+          # Collect new, first-level directories under data/
+          new_dirs=$(git diff --name-status origin/"${BASE_REF}"...HEAD \
+                       --diff-filter=A |
+                     awk '$2 ~ /^data\// {split($2,a,"/"); print a[2]}' |
+                     sort -u | xargs)
+
+          echo "dirs=${new_dirs}" >> "$GITHUB_OUTPUT"
+
+          if [[ -z "${new_dirs}" ]]; then
+            echo "No new data subdirectories detected."
+          else
+            echo "New data subdirectories:"
+            printf '  • %s\n' ${new_dirs}
+          fi
+
+      - name: Set up Python
+        if: steps.detect.outputs.dirs != ''
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+
+      - name: Install mammos-parser
+        if: steps.detect.outputs.dirs != ''
+        run: |
+          python -m pip install --upgrade pip
+          pip install "git+https://github.com/MaMMoS-project/mammos-parser.git@uppsala-parser"
+
+      - name: Validate all new datasets
+        if: steps.detect.outputs.dirs != ''
+        env:
+          DIRS: ${{ steps.detect.outputs.dirs }}
+          FORCE_COLOR: '1'
+          PY_COLORS: '1'
+          TERM: xterm-256color
+          COLUMNS: '160'
+        run: |
+          set +e        # we collect failures manually
+          failed=0
+
+          for dir in $DIRS; do
+            mammos-parser -v validate-uppsala "data/${dir}"
+            if [[ $? -ne 0 ]]; then
+              failed=1
+            fi
+          done
+
+          exit $failed
