@@ -9,8 +9,9 @@ dataset is structured as follows:
 
 ```yaml
 chemical-formula_optional-description:
-  rspt:
-    common_rstp_input:
+  RSPt:
+    README.md  # optional
+    common_input:
       - atomdens
       - kmap
       - spts
@@ -28,14 +29,15 @@ chemical-formula_optional-description:
       - green.inp-*
       - out-*
       - data
-  uppasd:
+  UppASD:
+    README.md  # optional
     MC:
       - jfile
       - momfile
       - posfile
       - inpsd.dat
-      - M(T)  # output
-  README.md
+      - output.csv
+  README.md  # optional
   intrinsic_properties.yaml
   structure.cif
 ```
