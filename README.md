@@ -37,6 +37,7 @@ chemical-formula_optional-description:
       - posfile
       - inpsd.dat
       - output.csv
+  DOSCAR  # optional
   README.md  # optional
   intrinsic_properties.yaml
   structure.cif
