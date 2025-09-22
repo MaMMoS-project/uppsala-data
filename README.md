@@ -62,6 +62,9 @@ Comments:
   `mammos_entity.io.entities_to_file` and contains entities
   SpontaneousPolarization `Js`, MagnetocrystallineAnisotropyEnergy `MAE` and
   CurieTemperature `Tc`.
+- `MC/output.csv` is created with `mammos_entity.io.entities_to_file` and contains
+  entities ThermodynamicTemperature `T`, SpontaneousMagnetization `Ms`, and
+  IsochoricHeatCapacity `Cv`.
 - `green.inp-*` and `out-*` are present in pairs; `*` denotes consecutive numbers.
 
 ## Contributing data
