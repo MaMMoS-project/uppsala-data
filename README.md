@@ -26,9 +26,10 @@ chemical-formula_optional-description:
     gs_z:
       - ...
     Jij:
+      - data
       - green.inp-*
       - out-*
-      - data
+      - out_last
   UppASD:
     README.md  # optional
     MC:
