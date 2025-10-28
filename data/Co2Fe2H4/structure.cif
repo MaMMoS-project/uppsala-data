@@ -4,7 +4,8 @@
 #----------------------------------------------------------------------
 data_VESTA_phase_1
 
-_chemical_name_common                  'Fe2 Cr2 H4'
+_chemical_name_common                  'Fe2 Co2 H4'
+
 _cell_length_a                         2.645345
 _cell_length_b                         2.645314
 _cell_length_c                         8.539476
