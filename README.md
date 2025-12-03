@@ -32,11 +32,19 @@ chemical-formula_optional-description:
       - out_last
   UppASD:
     README.md  # optional
-    MC:
+    MC_1:
       - jfile
       - momfile
       - posfile
       - inpsd.dat
+      - M(T)
+      - output.csv
+    MC_2:  # optional
+      - jfile
+      - momfile
+      - posfile
+      - inpsd.dat
+      - M(T)
       - output.csv
   DOSCAR  # optional
   README.md  # optional
@@ -63,8 +71,12 @@ Comments:
   `mammos_entity.io.entities_to_file` and contains entities
   SpontaneousPolarization `Js`, MagnetocrystallineAnisotropyEnergy `MAE` and
   CurieTemperature `Tc`.
-- `MC/output.csv` is created with `mammos_entity.io.entities_to_file` and contains
+- `MC_*/output.csv` is created with `mammos_entity.io.entities_to_file` and contains
   entities ThermodynamicTemperature `T`, SpontaneousMagnetization `Ms`, and
+- If Tc is derived from Binder cumulants, two directories `MC_1` and `MC_2` need to be
+  present, otherwise a single `MC_1` is sufficient. If multiple directories are present,
+  `MC_1` should contain the largest system size, so that the most accurate simulation
+  can always be found in `MC_1`.
   IsochoricHeatCapacity `Cv`.
 - `green.inp-*` and `out-*` are present in pairs; `*` denotes consecutive numbers.
 
