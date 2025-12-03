@@ -60,7 +60,7 @@ jobs:
           failed=0
 
           for dir in $DIRS; do
-            mammos-parser -v validate-uppsala "data/${dir}"
+            mammos-parser -v uppsala-data validate-dataset "data/${dir}"
             if [[ $? -ne 0 ]]; then
               failed=1
             fi
