@@ -21,10 +21,14 @@ chemical-formula_optional-description:
       - data
       - hist OR out_MF
       - out_last
-    gs_y:
-      - ...
+    gs_y:  # optional
+      - data
+      - hist OR out_MF
+      - out_last
     gs_z:
-      - ...
+      - data
+      - hist OR out_MF
+      - out_last
     Jij:
       - data
       - green.inp-*
@@ -60,25 +64,25 @@ Comments:
   - `Nd2Fe14B_method1`
   - `Nd2Fe14B_method2`
   - $`(Nd_{1-x} Ce_x)_2 Fe_{14}B`$ with x=0.25 -> `Nd1.5Ce0.5Fe14B`
-- `common_rspt_input` contains input files required for rspt, shared across all
-  DFT calculations for the material. Together with data and optionally one
+- `RSPt/common_input` contains input files required for all RSPt runs.
+  Together with data and optionally one
   green.inp-* it is sufficient to rerun the DFT calculations.
-- Only two of `gs_x`, `gs_y` and `gs_z` are required. The directories contain
+- Only `gs_x` and `gs_z` are required. The directories contain
   either `hist` OR `out_MF` depending on how `MAE` is calculated.
-- Each directory can optionally contain a README.md file, which should be human
-  readable but not machine readable.
+- Optional README.md files should be human readable and will not be parsed
+  when validating a dataset.
 - `intrinsic_properties.yaml` is created with
   `mammos_entity.io.entities_to_file` and contains entities
-  SpontaneousPolarization `Js`, MagnetocrystallineAnisotropyEnergy `MAE` and
+  SpontaneousMagneticPolarisation `Js`, SpontaneousMagnetization `Ms`, MagnetocrystallineAnisotropyEnergy `MAE` and
   CurieTemperature `Tc`.
 - `MC_*/output.csv` is created with `mammos_entity.io.entities_to_file` and contains
   entities ThermodynamicTemperature `T`, SpontaneousMagnetization `Ms`, and
+  IsochoricHeatCapacity `Cv`.
 - If Tc is derived from Binder cumulants, two directories `MC_1` and `MC_2` need to be
   present, otherwise a single `MC_1` is sufficient. If multiple directories are present,
   `MC_1` should contain the largest system size, so that the most accurate simulation
   can always be found in `MC_1`.
-  IsochoricHeatCapacity `Cv`.
-- `green.inp-*` and `out-*` are present in pairs; `*` denotes consecutive numbers.
+- `green.inp-*` and `out-*` are present in pairs; no further constraints are applied to the suffixes.
 
 ## Contributing data
 
