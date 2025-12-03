@@ -95,7 +95,9 @@ To add a new dataset (or update an existing one) please follow the following ste
    git clone git@github.com:MaMMoS-project/uppsala-data.git
    ```
 
-   Alternatively, use `git clone https://github.com/MaMMoS-project/uppsala-data.git`
+   Alternatively, use `git clone https://github.com/MaMMoS-project/uppsala-data.git` Note: you cannot push over
+   https using your username+password. Instead, you have to create a
+   [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
    Then go into the new directory: `cd uppsala-data`
 
