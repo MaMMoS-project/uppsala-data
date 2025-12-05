@@ -1,0 +1,15 @@
+  Js:
+    value: 0.77
+    unit: T
+    ontology_label: SpontaneousPolarization
+    iri: ...
+  MAE:
+    value: 2.17
+    unit: MJ/m3
+    ontology_label: MagnetocrystallineAnisotropyEnergy
+    iri: ...
+  Tc:
+    value: 535
+    unit: K
+    ontology_label: CurieTemperature
+    iri: ...
