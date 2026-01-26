@@ -5,56 +5,9 @@ This repository contains DFT and spindynamics data computed at Uppsala universit
 ## Folder structure
 
 All simulation data is stored in the `data/` directory. The content of each
-dataset is structured as follows:
+dataset must follow the schema defined in [dataset-schema.yaml](dataset-schema.yaml).
 
-```yaml
-chemical-formula_optional-description:
-  RSPt:
-    README.md  # optional
-    common_input:
-      - atomdens
-      - kmap
-      - spts
-      - symcof
-      - symt.inp
-    gs_x:
-      - data
-      - hist OR out_MF
-      - out_last
-    gs_y:  # optional
-      - data
-      - hist OR out_MF
-      - out_last
-    gs_z:
-      - data
-      - hist OR out_MF
-      - out_last
-    Jij:
-      - data
-      - green.inp-*
-      - out-*
-      - out_last
-  UppASD:
-    README.md  # optional
-    MC_1:
-      - jfile
-      - momfile
-      - posfile
-      - inpsd.dat
-      - M(T)
-      - output.csv
-    MC_2:  # optional
-      - jfile
-      - momfile
-      - posfile
-      - inpsd.dat
-      - M(T)
-      - output.csv
-  DOSCAR  # optional
-  README.md  # optional
-  intrinsic_properties.yaml
-  structure.cif
-```
+Schema compliance is ensured via CI and [mammos-parser](https://github.com/MaMMoS-project/mammos-parser).
 
 Comments:
 - The directory name should be a reduced chemical formula and can optionally
@@ -71,17 +24,11 @@ Comments:
   either `hist` OR `out_MF` depending on how `MAE` is calculated.
 - Optional README.md files should be human readable and will not be parsed
   when validating a dataset.
-- `intrinsic_properties.yaml` is created with
-  `mammos_entity.io.entities_to_file` and contains entities
-  SpontaneousMagneticPolarisation `Js`, SpontaneousMagnetization `Ms`, MagnetocrystallineAnisotropyEnergy `MAE` and
-  CurieTemperature `Tc`.
-- `MC_*/output.csv` is created with `mammos_entity.io.entities_to_file` and contains
-  entities ThermodynamicTemperature `T`, SpontaneousMagnetization `Ms`, and
-  IsochoricHeatCapacity `Cv`.
+- `intrinsic_properties.yaml` and `MC_*/thermal.csv` have a defined structure and are best creating with with `mammos-parser`.
 - If Tc is derived from Binder cumulants, two directories `MC_1` and `MC_2` need to be
-  present, otherwise a single `MC_1` is sufficient. If multiple directories are present,
+  present (optionally a third `MC_3` may also be present), otherwise a single `MC_1` is sufficient. If multiple directories are present,
   `MC_1` should contain the largest system size, so that the most accurate simulation
-  can always be found in `MC_1`.
+  can always be found in `MC_1` (this rule is not enforced by the parser).
 - `green.inp-*` and `out-*` are present in pairs; no further constraints are applied to the suffixes.
 
 ## Contributing data
