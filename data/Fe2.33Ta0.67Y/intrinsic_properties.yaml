@@ -1,15 +1,28 @@
+metadata:
+  version: v2
+  description: ''
+data:
   Js:
-    value: 0.77
+    ontology_label: SpontaneousMagneticPolarisation
+    description: ''
+    ontology_iri: https://w3id.org/emmo/domain/magnetic_material#EMMO_57873439-dfa4-5b74-aec7-d530376ae11c
     unit: T
-    ontology_label: SpontaneousPolarization
-    iri: ...
+    value: 0.6507332037300707
+  Ms:
+    ontology_label: SpontaneousMagnetization
+    description: ''
+    ontology_iri: https://w3id.org/emmo/domain/magnetic_material#EMMO_032731f8-874d-5efb-9c9d-6dafaa17ef25
+    unit: A / m
+    value: 517837.0297564328
   MAE:
-    value: 2.17
-    unit: MJ/m3
     ontology_label: MagnetocrystallineAnisotropyEnergy
-    iri: ...
+    description: MAE from force theorem
+    ontology_iri: https://w3id.org/emmo/domain/magnetic_material#EMMO_e9e3b7d2-d4fa-5140-88dc-2f0d60cf6d15
+    unit: MJ / m3
+    value: 2.173977035240342
   Tc:
-    value: 535
-    unit: K
     ontology_label: CurieTemperature
-    iri: ...
+    description: Tc from specific heat
+    ontology_iri: https://w3id.org/emmo#EMMO_6b5af5a8_a2d8_4353_a1d6_54c9f778343d
+    unit: K
+    value: 535.0
