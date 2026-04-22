@@ -1,0 +1,14 @@
+[workspace]
+authors = ["Martin Lang"]
+channels = ["conda-forge"]
+name = "uppsala-data"
+platforms = ["linux-64", "osx-arm64"]
+version = "0.1.0"
+
+[tasks]
+
+[dependencies]
+python = "==3.11"
+
+[pypi-dependencies]
+mammos-parser = "*"
