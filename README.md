@@ -46,6 +46,8 @@ To add a new dataset (or update an existing one) please follow the following ste
    https using your username+password. Instead, you have to create a
    [personal access token](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens).
 
+   Install [pixi](https://pixi.prefix.dev/latest/installation/), which is used to managed dependencies.
+
    Then go into the new directory: `cd uppsala-data`
 
 2. Switch to the correct branch:
@@ -66,6 +68,26 @@ To add a new dataset (or update an existing one) please follow the following ste
    can also add additional information to the subdirectory name, e.g.
    `<chemical_composition>_<other_information>`, which can e.g. be useful if the
    multiple datasets exist for the same chemical composition.
+
+   Once you have all raw data, use `mammos-parser` to check for consistency:
+
+   ```
+   pixi run mammos-parser uppsala-data validate-dataset data/<chemical_composition>
+   ```
+
+   This will inform you about wrong/missing data. Fix all issues until you are left with just complaints
+   about the files `intrinsic_properties.yaml`, `thermal.csv` and `metadata.yaml`. These three files can
+   (and should) be auto-generated with the following command:
+
+   ```
+   pixi run mammos-parser uppsala-data generate-derived-files data/<chemical_composition>
+   ```
+
+   Once that has finished, re-run the validation, which should now pass:
+
+   ```
+   pixi run mammos-parser uppsala-data validate-dataset data/<chemical_composition>
+   ```
 
    Once you have all data add and commit it:
 
