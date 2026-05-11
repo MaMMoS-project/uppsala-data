@@ -1,0 +1,18 @@
+ History
+    Start runs mpprun -np 120 ./rspt 1.00e-13 99 on n635, Thu Nov 20 11:30:15 2025
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e   30 4.48E-14 ( 7.01E-11)     23.3318772        -34,387.403 158 901
+@      1043.36733 -34387.4031589008
+                   EF    Q(max)      MixR  spin mix       SCALE
+         0.747 524 83     0.000     0.050     0.100   9.0763545
+               dvr            R(dvi)            I(dvi)
+         0.0004302         0.0000006         0.0000000
+   user time:  0 hr 21 min 14 sec
+ system time:  0 hr  0 min 10 sec
+    end runs, Thu Nov 20 22:41:18 2025
+
+    Start runs mpprun -np 120 ./rspt 1.00e-13 99 on n310, Thu Nov 27 17:42:46 2025
+   user time:  0 hr 14 min 39 sec
+ system time:  0 hr  0 min  9 sec
+    end runs, Thu Nov 27 17:57:44 2025
+
