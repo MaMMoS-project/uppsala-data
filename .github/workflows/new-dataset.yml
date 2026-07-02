@@ -78,6 +78,7 @@ jobs:
           # check that there are no changes/uncommitted files
           if [[ -n $(git status -s) ]]; then
             echo generated files are outdated:
+            git status
             git diff
             failed=1
           fi
