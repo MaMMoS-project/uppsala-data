@@ -1,0 +1,63 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'Be4 Fe20 B8'
+_cell_length_a                         5.452442
+_cell_length_b                         5.452442
+_cell_length_c                         9.930572
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      90.000000
+_cell_volume                           295.227158
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Be1        1.0     0.000000     0.000000     0.250000    Uiso  ? Be
+   Be2        1.0     0.500000     0.500000     0.250000    Uiso  ? Be
+   Be3        1.0     0.500000     0.500000     0.750000    Uiso  ? Be
+   Be4        1.0     0.000000     0.000000     0.750000    Uiso  ? Be
+   Fe1        1.0     0.500000     0.500000     0.000000    Uiso  ? Fe
+   Fe2        1.0     0.167693     0.667693     0.143149    Uiso  ? Fe
+   Fe3        1.0     0.667693     0.832307     0.143149    Uiso  ? Fe
+   Fe4        1.0     0.332307     0.832307     0.356851    Uiso  ? Fe
+   Fe5        1.0     0.667693     0.167693     0.356851    Uiso  ? Fe
+   Fe6        1.0     0.167693     0.332307     0.356851    Uiso  ? Fe
+   Fe7        1.0     0.832307     0.667693     0.356851    Uiso  ? Fe
+   Fe8        1.0     0.332307     0.167693     0.143149    Uiso  ? Fe
+   Fe9        1.0     0.000000     0.000000     0.000000    Uiso  ? Fe
+   Fe10       1.0     0.832307     0.332307     0.143149    Uiso  ? Fe
+   Fe11       1.0     0.000000     0.000000     0.500000    Uiso  ? Fe
+   Fe12       1.0     0.667693     0.167693     0.643149    Uiso  ? Fe
+   Fe13       1.0     0.167693     0.332307     0.643149    Uiso  ? Fe
+   Fe14       1.0     0.832307     0.332307     0.856851    Uiso  ? Fe
+   Fe15       1.0     0.167693     0.667693     0.856851    Uiso  ? Fe
+   Fe16       1.0     0.667693     0.832307     0.856851    Uiso  ? Fe
+   Fe17       1.0     0.332307     0.167693     0.856851    Uiso  ? Fe
+   Fe18       1.0     0.832307     0.667693     0.643149    Uiso  ? Fe
+   Fe19       1.0     0.500000     0.500000     0.500000    Uiso  ? Fe
+   Fe20       1.0     0.332307     0.832307     0.643149    Uiso  ? Fe
+   B1         1.0     0.879168     0.620832     0.000000    Uiso  ? B
+   B2         1.0     0.379168     0.879168     0.000000    Uiso  ? B
+   B3         1.0     0.120832     0.379168     0.000000    Uiso  ? B
+   B4         1.0     0.620832     0.120832     0.000000    Uiso  ? B
+   B5         1.0     0.379168     0.120832     0.500000    Uiso  ? B
+   B6         1.0     0.879168     0.379168     0.500000    Uiso  ? B
+   B7         1.0     0.620832     0.879168     0.500000    Uiso  ? B
+   B8         1.0     0.120832     0.620832     0.500000    Uiso  ? B
+
