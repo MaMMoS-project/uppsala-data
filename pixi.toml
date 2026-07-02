@@ -11,4 +11,4 @@ version = "0.1.0"
 python = "==3.11"
 
 [pypi-dependencies]
-mammos-parser = "*"
+mammos-parser = { git = "https://github.com/mammos-project/mammos-parser.git" }
