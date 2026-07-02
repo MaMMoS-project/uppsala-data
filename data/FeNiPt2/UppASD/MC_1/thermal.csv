@@ -1,0 +1,24 @@
+# mammos csv v3
+#----------------------------------------
+# Temperature-dependent quantities computed with UppASD
+#----------------------------------------
+ThermodynamicTemperature,SpontaneousMagnetization,SpontaneousMagneticPolarization,HelmholtzEnergy,IsochoricHeatCapacity,MagneticSusceptibility,BinderCumulant
+,,,,Computed as derivative dE/dT.,,
+https://w3id.org/emmo#EMMO_affe07e4_e9bc_4852_86c6_69e26182a17f,https://w3id.org/emmo/domain/magnetic-materials#EMMO_032731f8-874d-5efb-9c9d-6dafaa17ef25,https://w3id.org/emmo/domain/magnetic-materials#EMMO_db6f7b13-1f1d-584f-9d73-47939b86a7cd,https://w3id.org/emmo#EMMO_262d4582_15b9_4685_b693_24f8e9ead98d,https://w3id.org/emmo#EMMO_8fc576e1_3984_402b_a548_be921b4e1bf4,https://w3id.org/emmo#EMMO_e59eb557_3a0f_4532_9984_deed22f94952,https://w3id.org/emmo/domain/magnetic-materials#EMMO_a3596efd-1d89-5253-8ddc-000bfadc4201
+K,kA / m,T,eV,eV / K,,
+T,Ms,Js,E,Cv,chi,U_L
+2.0,601.5,0.756,-0.182869,0.000347,0.000372,0.666667
+10.0,593.5,0.746,-0.180091,0.000349,0.000381,0.666667
+50.0,550.8,0.692,-0.165753,0.000371,0.000598,0.666665
+100.0,487.0,0.612,-0.146392,0.000399,0.001506,0.666659
+200.0,306.3,0.385,-0.104261,0.000443,0.007203,0.666476
+220.0,251.3,0.316,-0.095304,0.000466,0.011022,0.666191
+230.0,214.6,0.27,-0.090552,0.00049,0.017439,0.665589
+235.0,191.4,0.241,-0.088068,0.0005,0.024392,0.664743
+240.0,164.7,0.207,-0.08555,0.000535,0.035411,0.66284
+243.0,141.9,0.178,-0.08389,0.000547,0.049187,0.659522
+245.0,124.3,0.156,-0.082806,0.000561,0.084818,0.650916
+247.0,99.7,0.125,-0.081646,0.000563,0.145439,0.626409
+250.0,55.1,0.069,-0.080032,0.000478,0.163812,0.524811
+260.0,18.7,0.023,-0.077233,0.000261,0.031063,0.40759
+300.0,9.6,0.012,-0.069877,0.000184,0.006549,0.389074
