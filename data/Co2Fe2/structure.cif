@@ -1,0 +1,23 @@
+data_1
+_audit_creation_method   'vasp2cif'
+_cell_length_a    2.5991599777116066
+_cell_length_b    2.5991310712155387
+_cell_length_c    7.946350253526563
+_cell_angle_alpha    90.0
+_cell_angle_beta    90.0
+_cell_angle_gamma    120.00036539542178
+
+_symmetry_space_group_name_H-M    'P 1'
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_occupancy
+Fe2   Fe   0.666668999999999   0.333337000000000   0.250000000000000   1.0000000
+Fe2   Fe   0.333331000000001   0.666663000000000   0.750000000000000   1.0000000
+Co2   Co   0.000000000000000   0.000000000000000   0.000000000000000   1.0000000
+Co2   Co   0.000000000000000   0.000000000000000   0.500000000000000   1.0000000
+
+
