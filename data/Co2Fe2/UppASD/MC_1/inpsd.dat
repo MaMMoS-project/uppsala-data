@@ -1,0 +1,31 @@
+imid UppASD__123
+
+cell   1.000000000000000 -0.499999899385283  0.000000000000000
+       0.000000000000000  0.866011930261588  0.000000000000000
+       0.000000000000000  0.000000000000000  3.228114291330621
+
+ncell 24  24  24
+bc    P P P
+sym 0
+posfile ./posfile
+posfiletype D
+
+initmag IMAG
+#restartfile init_mag
+momfile ./momfile
+maptype 2
+exchange ./jfile
+ip_mode M
+ip_temp TEMP
+ip_mcnstep 50000
+#ip_hfield 0 0 2
+
+mode M
+temp TEMP
+mcnstep 50000
+#hfield 0 0 2
+plotenergy 1
+do_proj_avrg Y
+do_cumu Y
+
+alat 2.6453449655e-10

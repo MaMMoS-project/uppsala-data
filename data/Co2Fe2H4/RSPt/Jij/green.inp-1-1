@@ -1,0 +1,26 @@
+
+matsubara
+1200 60 60 0
+
+
+projection
+1
+
+verbose
+UppASD
+
+
+isoexch
+1
+1
+-6
+4
+1 2 3 4
+
+
+cluster
+4  0                   ! ntot udef [nsites]
+1 2 1 1 0
+2 2 1 1 0
+3 2 1 1 0
+4 2 1 1 0
