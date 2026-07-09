@@ -1,0 +1,43 @@
+
+#======================================================================
+# CRYSTAL DATA
+#----------------------------------------------------------------------
+data_VESTA_phase_1
+
+_chemical_name_common                  'Fe8 Re2 W2'
+_cell_length_a                         4.636012
+_cell_length_b                         4.636012
+_cell_length_c                         7.702115
+_cell_angle_alpha                      90.000000
+_cell_angle_beta                       90.000000
+_cell_angle_gamma                      119.999992
+_cell_volume                           143.360562
+_space_group_name_H-M_alt              'P 1'
+_space_group_IT_number                 1
+
+loop_
+_space_group_symop_operation_xyz
+   'x, y, z'
+
+loop_
+   _atom_site_label
+   _atom_site_occupancy
+   _atom_site_fract_x
+   _atom_site_fract_y
+   _atom_site_fract_z
+   _atom_site_adp_type
+   _atom_site_U_iso_or_equiv
+   _atom_site_type_symbol
+   Fe1        1.0     0.000000     0.000000     0.999367    Uiso  ? Fe
+   Fe2        1.0     0.000000     0.000000     0.499367    Uiso  ? Fe
+   Fe3        1.0     0.170518     0.829482     0.250567    Uiso  ? Fe
+   Fe4        1.0     0.341036     0.170518     0.750567    Uiso  ? Fe
+   Fe5        1.0     0.829482     0.658964     0.750567    Uiso  ? Fe
+   Fe6        1.0     0.170518     0.341036     0.250567    Uiso  ? Fe
+   Fe7        1.0     0.658964     0.829482     0.250567    Uiso  ? Fe
+   Fe8        1.0     0.829482     0.170518     0.750567    Uiso  ? Fe
+   Re1        1.0     0.333333     0.666667     0.932659    Uiso  ? Re
+   Re2        1.0     0.666667     0.333333     0.432659    Uiso  ? Re
+   W1         1.0     0.666667     0.333333     0.066273    Uiso  ? W
+   W2         1.0     0.333333     0.666667     0.566273    Uiso  ? W
+
