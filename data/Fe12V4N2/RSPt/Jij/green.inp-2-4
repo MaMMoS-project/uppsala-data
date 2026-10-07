@@ -1,0 +1,24 @@
+
+matsubara
+2400 150 150 0
+
+projection
+1
+
+verbose
+UppASD
+
+isoexch
+1
+2
+-3
+4
+13 14 15 16
+
+cluster
+5 0
+13 2 1 1 0
+14 2 1 1 0
+15 2 1 1 0
+16 2 1 1 0
+2 2 1 1 0
