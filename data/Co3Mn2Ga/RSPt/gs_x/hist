@@ -1,0 +1,40 @@
+ History
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid001252, Wed Jun 17 14:35:01 2026
+1781699701
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e    0 9.98E-04 ( 8.87E-01)     20.9285182        -33,707.591 662 984
+@      1026.84980 -33707.5916629841
+                   EF    Q(max)      MixR  spin mix       SCALE
+         0.894 220 20     0.000     0.050     0.100   8.9831041
+               dvr            R(dvi)            I(dvi)
+         1.2804204        -0.2360366         0.0000000
+   user time:  0 hr  8 min 52 sec
+ system time:  0 hr  0 min  5 sec
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e    1 6.76E-04 ( 8.09E-01)     22.6402085        -33,765.341 171 438
+@      1026.84980 -33765.3411714380
+                   EF    Q(max)      MixR  spin mix       SCALE
+         0.862 474 21     0.000     0.050     0.100   8.9831041
+               dvr            R(dvi)            I(dvi)
+         0.7687274        -0.2162597         0.0000000
+   user time:  0 hr  8 min 59 sec
+ system time:  0 hr  0 min  5 sec
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid001384, Thu Jun 18 11:15:57 2026
+1781774157
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid001130, Thu Jun 18 19:33:31 2026
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e   30 5.96E-14 ( 6.57E-11)     23.0454166        -33,767.524 870 606
+@      1026.84980 -33767.5248706057
+                   EF    Q(max)      MixR  spin mix       SCALE
+         0.766 193 21     0.000     0.050     0.100   8.9831041
+               dvr            R(dvi)            I(dvi)
+         0.0004181         0.0000008         0.0000000
+   user time:  0 hr  8 min 48 sec
+ system time:  0 hr  0 min  4 sec
+    end runs, Thu Jun 18 23:56:36 2026
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid001954, Mon Jun 22 23:37:02 2026
+   user time:  0 hr  5 min 58 sec
+ system time:  0 hr  0 min  4 sec
+    end runs, Mon Jun 22 23:43:08 2026
+
