@@ -1,0 +1,90 @@
+ History
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid01019, Mon Jun 14 19:22:23 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e   98 1.01E-09 ( 3.06E-09)     4.35054179        -12,932.789 397 887
+@      419.182679 -12932.7893978869
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.135 185 3     0.000     0.050     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.1134119        -0.0000270         0.0000000
+   user time:  0 hr  2 min 50 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Tue Jun 15 00:09:25 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid00044, Tue Jun 15 12:48:29 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  197 5.66E-10 ( 7.92E-11)     4.35053922        -12,932.789 302 756
+@      419.182679 -12932.7893027566
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.135 163 8     0.000     0.030     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.1134108        -0.0000003         0.0000524
+   user time:  0 hr  2 min 51 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Tue Jun 15 17:38:39 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid00178, Wed Jun 16 01:34:13 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  296 5.45E-10 ( 6.58E-11)     4.35053859        -12,932.789 323 651
+@      419.182679 -12932.7893236514
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.135 163 1     0.000     0.030     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.1134108         0.0000231         0.0000006
+   user time:  0 hr  2 min 49 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Wed Jun 16 06:22:11 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid00491, Wed Jun 16 10:44:08 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  395 5.42E-10 ( 7.18E-11)     4.35054139        -12,932.789 327 088
+@      419.182679 -12932.7893270883
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.135 162 8     0.000     0.020     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.1134108         0.0000211         0.0000000
+   user time:  0 hr  2 min 48 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Wed Jun 16 15:31:06 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid00027, Fri Jun 18 12:02:01 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  434 6.94E-14 ( 7.59E-11)     4.18388790        -12,914.208 181 502
+@      419.182679 -12914.2081815024
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.132 633 9     0.000     0.020     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.0004266        -0.0000000         0.0000015
+   user time:  0 hr  2 min 47 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Fri Jun 18 13:54:17 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid00265, Mon Jun 21 22:11:59 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  533 1.47E-09 ( 3.53E-08)     4.35179698        -12,932.789 208 732
+@      419.182679 -12932.7892087321
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.135 165 6     0.000     0.020     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.1134164        -0.0000549         0.0000073
+   user time:  0 hr  2 min 50 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Tue Jun 22 03:00:30 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid01435, Tue Jun 22 16:57:11 2021
+  Iter   <f**2>   (<fe**2>)         Moment                          E
+e  578 7.11E-14 ( 5.02E-11)     4.18394612        -12,914.208 181 411
+@      419.182679 -12914.2081814114
+                   EF    Q(max)      MixR  spin mix       SCALE
+          1.132 634 1     0.000     0.020     0.100   5.9904317
+               dvr            R(dvi)            I(dvi)
+         0.0004266        -0.0000017         0.0000000
+   user time:  0 hr  2 min 46 sec
+ system time:  0 hr  0 min  1 sec
+    end runs, Tue Jun 22 20:08:36 2021
+
+    Start runs srun -n 256 rspt 1.00e-13 99 on nid001319, Tue Jun 23 14:36:17 2026
+   user time:  0 hr  1 min 12 sec
+ system time:  0 hr  0 min  2 sec
+    end runs, Tue Jun 23 14:37:34 2026
+
